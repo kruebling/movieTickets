@@ -6,9 +6,9 @@ function Ticket(movie, time, age, quantity) {
   this.movieQuantity = quantity;
 }
 
-// Ticket.prototype.totalPrice = function() {
-//   return '$' + ((this.movieName + this.movieTime) - this.movieAge) * this.movieQuantity;
-// }
+Ticket.prototype.totalPrice = function() {
+  return '$' + ((this.movieName + this.movieTime) - this.movieAge) * this.movieQuantity;
+}
 
 // front-end logic
 $(document).ready(function() {
